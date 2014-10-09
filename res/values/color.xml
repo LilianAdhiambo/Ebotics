@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="togo">#355664</color>
+    <color name="go">#213E4A</color>
+    <color name="red">#E30D0D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#F4E807</color>
+    <color name="purple">#E504A5</color>
+    <color name="dark_blue">#461AB6</color>
+    <color name="grey">#6D6A69</color>
+    <color name="light_grey">#C9C4C1</color>
+    <color name="green">#628121</color>
+    <color name="light_green">#B2E24A</color>
+    <color name="dark_gray">#696969</color>
+    <color name="douch_blue">#1E90FF</color>
+    <color name="orange">#ff6633</color>
+    <color name="gren">#228B22</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="Ga">#D3D3D3</color>
+    <color name="black">#000</color>
+    <color name="celdon">#007BA7</color>
+    <color name="tangerine">#F28500</color>
+</resources>
