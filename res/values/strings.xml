@@ -1,4 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ebotics</string>
+    <string name="home"></string>
+    <string name="entre">How to be an entreprenuer</string>
+    <string name="entera">Are you young, poor, unqualified – a student, or hating
+        your job? Maybe a touch rebellious? Perfect.  You have no bad habits,
+
+        and will work until your fingernails fall out and your eyeballs roll onto the desk.
+        The world awaits you.Older, wiser, bit of money saved, experienced with a stable job?
+        Maybe a mortgage and kids? Your job is much harder. It can be done, but it might feel
+        like you’re trying to dance backwards through quicksand.
+
+        The most important qualities of a good entrepreneur are energy and determination. It doesn’t hurt to be
+
+        persuasive, but this can be learned. I started as a shy uber-nerd aged 21; I soon learned how to sell when
+        it was the only way to feed myself.</string>
+
+   <string name="entreb">Anyone who is thinking about becoming an entrepreneur should give it some serious thought and
+        preparation first. You can’t just start up a new business on your own and hope that your approach to
+        entrepreneurship will prove successful. A smart person who wants to become a business owner in her own right
+        instead of working for someone else should take time to determine whether entrepreneurship is a logical step
+        in the right direction. Some people are not capable of working on their own and some make better employees than
+        employers. Becoming an entrepreneur requires significant forethought and evaluation before quitting your day job
+        and investing time and money that you could easily lose. Below are seven basic steps that can move someone
+        toward becoming an entrepreneur with a successful business.
+
+        Be willing to take risks.
+        Any startup business involves risks, the ultimate one, of course, being the possibility of failure. If you are
+        uneasy about stepping out of your comfort zone, becoming an entrepreneur is probably not a good idea. For one
+        thing, you could spend all your extra time (assuming you still hold a full-time job doing something else) trying
+        to get your own business off the ground, only to have it fall flat. You are likely to hit a few glitches along
+        the way, even if the business begins to take off. You might struggle to get enough customers or the right kind
+        of customers. It’s not easy balancing the various facets of running your own business, from marketing,
+        production, quality control, delivery, and accounting. You will have to develop a certain amount of expertise
+        in all these areas or be able to hire others who know what to do.</string>
+
+    <style name="DefaultButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowColor">#f9f9f9</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <!--Robotics page-->
+
+    <string name="action_settings">Settings</string>
+    <string name="one_string">One</string>
+    <string name="two_string">Two</string>
+    <string name="three_string">Three</string>
+    <string name="four_string">Four</string>
+
 </resources>

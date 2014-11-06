@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-        >
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Hello World, MyActivity"
-            />
-</LinearLayout>
+              android:orientation="vertical">
+
+  <TextView
+        android:id="@+id/Username"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:text="Hold For contextual menu"
+        android:padding="4dip" />
+
+<EditText
+        android:id="@+id/usernameEdittext"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:background="@color/white"
+        android:layout_width="400dip" />
+
+        </LinearLayout>
 

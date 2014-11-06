@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/togo"
+            android:padding="10dp">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10dip" >
+        <!--  View Title Label -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="Requirements"
+                android:textSize="25dip"
+                android:textStyle="bold" />
+        <!--  Email Label -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="2 small motors (these can be found in some toys and in electric toothbrushes)\n
+2 SPDT or 3-way switches\n
+1 AA battery holder (with space for 2 batteries)\n
+1 piece of metal (roughly 1”x3”, aluminum works well)\n
+2 spade connectors\n
+Heat-shrink tubing\n
+1 small bead\n
+A handful of paper clips" />
+
+        <!--  step one -->
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:src="@drawable/stepa" />
+
+        <!--  step one -->
+        <TextView android:id="@+id/login_error"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:padding="10dip"
+                  android:text="Step 1:Fit the heat-shrink tubing to the wheel on the motor. Cut a piece of the tubing just a
+                  little longer than each wheel, fit it onto the wheel and shrink it using a lighter or the soldering
+                   iron. You may wish to put a few layers in increasing diameters to really build up the tires."/>
+
+        <!--  step two -->
+        <ImageView android:id="@+id/login_error"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="10dip"
+                android:src="@drawable/stepb"/>
+
+        <TextView android:id="@+id/login_error"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:padding="10dip"
+                android:text="Step 2:Glue the switches to the backside of the battery holder.
+                Glue the switches to the back end of the battery holder on the flat side.
+                This should be the end which the wires come out of. Place them at an angle
+                in the corners, such that the contacts farthest from where the lever-looking
+                metal bar goes into the device are touching at the center line of the device.
+The levers, which are the switches themselves, should be at the outside, near the wires."/>
+
+        <!--  step two -->
+        <ImageView android:id="@+id/login_error"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="10dip"
+                   android:src="@drawable/stepc"/>
+
+        <TextView android:id="@+id/login_error"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:padding="10dip"
+                  android:text="Step 3:Place the metal strip. Place the 1”x3” strip of aluminum just behind the switches,
+                   center it, and then bend the excess down at a 45° angle. Glue it in place with hot glue.
+                   Let it set completely before moving on."/>
+
+
+
+        <!--  Login Button
+        <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="Login" />-->
+
+         Link to Registration Screen
+        <Button
+                android:id="@+id/btnLinkToentre"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:background="@null"
+                android:text="proceed"
+                android:textColor="@color/orange"
+                android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>
