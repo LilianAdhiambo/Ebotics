@@ -3,15 +3,19 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              android:background="@color/togo"
-              android:gravity="center_vertical" >
+              android:background="@drawable/phones"
+              android:layout_weight="1"
+              android:gravity="center" >
 
     <EditText
             android:id="@+id/etUserName"
             android:hint="User Name"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gray"
+            android:drawableLeft="@drawable/profile"
+            android:layout_centerInParent="true"
             android:layout_width="match_parent"
+            android:layout_marginTop="180dp"
             android:layout_height="wrap_content">
 
         <requestFocus />
@@ -22,8 +26,10 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/lock"
+            android:textColorHint="@color/dark_gray"
             android:inputType="textPassword" />
 
     <EditText
@@ -31,8 +37,10 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="Confirm Password"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
+            android:drawableLeft="@drawable/lock"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gray"
             android:inputType="textPassword" />
 
     <Button
@@ -40,7 +48,15 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Register"
-            android:background="@drawable/button_style"
-            android:layout_alignParentBottom="true"/>
+            android:layout_marginTop="10dp"
+            android:background="@color/orange"/>
+    <Button
+        android:id="@+id/btnLinkLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/togo"
+        android:text="Have an account,Login!!"
+        android:textSize="16sp"
+        android:background="@null"/>
 
 </LinearLayout>

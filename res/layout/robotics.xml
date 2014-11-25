@@ -9,7 +9,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="vertical"
-            android:padding="10dip" >
+            android:padding="5dip" >
         <!--  View Title Label -->
         <TextView
                 android:layout_width="fill_parent"
@@ -17,92 +17,298 @@
                 android:layout_marginBottom="10dip"
                 android:text="Requirements"
                 android:textSize="25dip"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
-        <!--  Email Label -->
+
+        <!-- requirements -->
         <TextView
                 android:layout_width="fill_parent"
+                android:id="@+id/tvrequire"
+                android:textColor="@color/white"
                 android:layout_height="wrap_content"
-                android:text="2 small motors (these can be found in some toys and in electric toothbrushes)\n
-2 SPDT or 3-way switches\n
-1 AA battery holder (with space for 2 batteries)\n
-1 piece of metal (roughly 1”x3”, aluminum works well)\n
-2 spade connectors\n
-Heat-shrink tubing\n
-1 small bead\n
-A handful of paper clips" />
+                android:text="1. 2 small motors (these can be found in some toys and in electric toothbrushes)\n
+                              2. 2 SPDT or 3-way switches\n
+                              3. 1 AA battery holder (with space for 2 batteries)\n
+                              4. 1 piece of metal (roughly 1”x3”, aluminum works well)\n
+                              5. 2 spade connectors\n
+                              6. Heat-shrink tubing\n
+                              7. 1 small bead\n
+                              8. A handful of paper clips" />
 
-        <!--  step one -->
-        <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dip"
-                android:src="@drawable/stepa" />
+<!--step one-->
+        <TextView android:id="@+id/tvstep1"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dip"
+                  android:textSize="15dip"
+                  android:textAllCaps="true"
+                  android:textColor="@color/white"
+                  android:textStyle="bold"
+                  android:text="Step1:Fit the heat-shrink tubing to the wheel on the motor."/>
 
-        <!--  step one -->
-        <TextView android:id="@+id/login_error"
+
+        <TextView android:id="@+id/tvstepa"
                   android:layout_width="fill_parent"
                   android:layout_height="wrap_content"
                   android:textColor="@color/white"
-                  android:padding="10dip"
-                  android:text="Step 1:Fit the heat-shrink tubing to the wheel on the motor. Cut a piece of the tubing just a
-                  little longer than each wheel, fit it onto the wheel and shrink it using a lighter or the soldering
-                   iron. You may wish to put a few layers in increasing diameters to really build up the tires."/>
+                  android:padding="5dip"
+                  android:text="Cut a piece of the tubing just a little longer than each wheel, fit it onto
+                               the wheel and shrink it using a lighter or the soldering iron. You may wish
+                               to put a few layers in increasing diameters to really build up the tires."/>
+
+
+        <ImageView
+                android:id="@+id/imageViewOne"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:src="@drawable/stepa" />
 
         <!--  step two -->
+        <TextView android:id="@+id/tvstep2"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dip"
+                  android:textSize="15dip"
+                  android:textAllCaps="true"
+                  android:textColor="@color/white"
+                  android:textStyle="bold"
+                  android:text="Step 2:Glue the switches to the backside of the battery holder."/>
+
+        <TextView android:id="@+id/tvstepb"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:padding="5dip"
+                  android:text=" Glue the switches to the back end of the battery holder on the flat side.
+                                This should be the end which the wires come out of. Place them at an angle
+                                in the corners, such that the contacts farthest from where the lever-looking
+                                metal bar goes into the device are touching at the center line of the device.
+                                The levers, which are the switches themselves, should be at the outside, near
+                                the wires."/>
+
         <ImageView android:id="@+id/login_error"
                   android:layout_width="fill_parent"
                   android:layout_height="wrap_content"
-                  android:padding="10dip"
+                  android:padding="5dip"
                 android:src="@drawable/stepb"/>
 
-        <TextView android:id="@+id/login_error"
+        <!--  step three -->
+        <TextView android:id="@+id/tvstep3"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dip"
+                  android:textSize="15dip"
+                  android:textAllCaps="true"
+                  android:textColor="@color/white"
+                  android:textStyle="bold"
+                  android:text="Step 3:Place the metal strip."/>
+
+        <TextView android:id="@+id/tvstepc"
                   android:layout_width="fill_parent"
                   android:layout_height="wrap_content"
                   android:textColor="@color/white"
-                  android:padding="10dip"
-                android:text="Step 2:Glue the switches to the backside of the battery holder.
-                Glue the switches to the back end of the battery holder on the flat side.
-                This should be the end which the wires come out of. Place them at an angle
-                in the corners, such that the contacts farthest from where the lever-looking
-                metal bar goes into the device are touching at the center line of the device.
-The levers, which are the switches themselves, should be at the outside, near the wires."/>
+                  android:padding="5dip"
+                  android:text=" Place the 1”x3” strip of aluminum just behind the switches,
+                                 center it, and then bend the excess down at a 45° angle.
+                                 Glue it in place with hot glue.Let it set completely before
+                                 moving on."/>
 
-        <!--  step two -->
         <ImageView android:id="@+id/login_error"
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
-                   android:padding="10dip"
+                   android:padding="5dip"
                    android:src="@drawable/stepc"/>
 
-        <TextView android:id="@+id/login_error"
+
+
+        <!--  step four-->
+        <TextView android:id="@+id/tvstep4"
                   android:layout_width="fill_parent"
                   android:layout_height="wrap_content"
+                  android:padding="5dip"
+                  android:textSize="15dip"
+                  android:textAllCaps="true"
                   android:textColor="@color/white"
-                  android:padding="10dip"
-                  android:text="Step 3:Place the metal strip. Place the 1”x3” strip of aluminum just behind the switches,
-                   center it, and then bend the excess down at a 45° angle. Glue it in place with hot glue.
-                   Let it set completely before moving on."/>
+                  android:textStyle="bold"
+                  android:text="Step 4:Attach the motors to the metal wings."/>
+        <TextView
+           android:id="@+id/tvstepdr"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:padding="5dip"
+           android:text=" Using hot glue, attach the motors to the bent down sections
+                          of metal such that the “tires” are touching the ground. You
+                          will want to pay attention to the charge markings on the motors,
+                          as the tires will need to go in opposite directions. Make sure
+                          that one motor is placed “upside down,” as compared to the other."/>
 
 
+        <ImageView android:id="@+id/login_error"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="5dip"
+                   android:src="@drawable/stepd"/>
 
-        <!--  Login Button
-        <Button
-                android:id="@+id/btnLogin"
+
+<!--step five-->
+        <TextView android:id="@+id/tvstep5"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dip"
+                  android:textSize="15dip"
+                  android:textAllCaps="true"
+                  android:textColor="@color/white"
+                  android:textStyle="bold"
+                  android:text="Step 5:Form the back wheel."/>
+        <TextView
+                android:id="@+id/tvstepe"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dip"
-                android:text="Login" />-->
+                android:textColor="@color/white"
+                android:padding="5dip"
+                android:text=" You will need a back wheel so that the robot doesn’t drag.
+                               Take a large paperclip and form it into the outline of a TARDIS or a house,
+                               with a medium-sized round bead at the peak. Place it at the opposite end from
+                               the protruding wires and hot glue the ends of the clip to the sides of the
+                               battery holder."/>
 
-         Link to Registration Screen
-        <Button
-                android:id="@+id/btnLinkToentre"
+        <ImageView android:id="@+id/login_error"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="5dip"
+                   android:src="@drawable/stepe"/>
+
+        <!--step six-->
+       <TextView android:id="@+id/tvstep6"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:padding="5dip"
+                 android:textSize="15dip"
+                 android:textAllCaps="true"
+                 android:textColor="@color/white"
+                 android:textStyle="bold"
+                 android:text="Step 6:Solder the robot. "/>
+        <TextView
+                android:id="@+id/tvstepf"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dip"
-                android:background="@null"
-                android:text="proceed"
-                android:textColor="@color/orange"
-                android:textStyle="bold" />
+                android:textColor="@color/white"
+                android:padding="5dip"
+                android:text="You will need to use a soldering iron and solder to connect all of the
+                electrical wires between the components of the robot. This must be done carefully in
+                order to ensure that it works. There are several connections you will have to make:
+                           1. First, solder the connection of the two switches.
+                           2. Next, solder a small wire between the two center connections on the switches.
+                           3. Solder two wires, one from the negative motor and one from the positive motor, to
+                              the final connection on the switch.
+                           5. Solder a longer wire between the remaining connections on the motors (connecting
+                              the motors to each other).
+                           6. Solder a longer wire between one of the back connections between the motor and
+                              the back section of the battery
+                           7. holder where the positive and negative charges meet.
+                           8. Take the positive wire from the battery holder and solder it to the center, touching
+                              connections on the switches.
+                           9.  The negative wire from the battery holder will go to the center connection on one of
+                               the switches.."/>
+
+        <ImageView android:id="@+id/login_error"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="5dip"
+                   android:src="@drawable/stepf"/>
+
+        <!--step seven-->
+        <TextView android:id="@+id/tvstep7"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="5dip"
+                   android:textSize="15dip"
+                   android:textAllCaps="true"
+                   android:textColor="@color/white"
+                   android:textStyle="bold"
+                   android:text="Step 7:Create the feelers for the robot."/>
+        <TextView
+                android:id="@+id/tvsteph"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:padding="5dip"
+                android:text=" Cut the rubber/plastic ends off of the spade connectors, open up
+                               two paper clips (until they form a shape like a bug’s feelers),and
+                               attach the spade connectors to the feelers with more heat-shrink tubing."/>
+
+        <ImageView android:id="@+id/login_error"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="5dip"
+                   android:src="@drawable/steph"/>
+
+        <!--step eight-->
+        <TextView android:id="@+id/tvstep8"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dip"
+                  android:textSize="15dip"
+                  android:textAllCaps="true"
+                  android:textColor="@color/white"
+                  android:textStyle="bold"
+                  android:text="Step 8:Attach the feelers to the switches and the servo motor."/>
+        <TextView
+                android:id="@+id/tvstepg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:padding="5dip"
+                android:text=" Attach the feelers to the switches using the spade connectors and glue
+                               (if you need it, they should clip or slip on just fine) then connect the servo motor
+                               directly to the center back of the battery holder."/>
+
+        <ImageView android:id="@+id/login_error"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="5dip"
+                   android:src="@drawable/stepi"/>
+
+        <!--step nine-->
+        <TextView android:id="@+id/tvstep9"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dip"
+                  android:textSize="15dip"
+                  android:textAllCaps="true"
+                  android:textColor="@color/white"
+                  android:textStyle="bold"
+                  android:text="Step 9:Turn it on by putting in batteries."/>
+        <TextView
+                android:id="@+id/tvstepi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:padding="5dip"
+                android:text=" (If you want to you can program a remote from a remote controlled car and turn
+                                it on that way).The robot should move in much the same way a roomba does. It just
+                                 won’t clean your floor.Unless your that good. Congratulations!"/>
+
+        <ImageView android:id="@+id/login_error"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="5dip"
+                   android:src="@drawable/stepi"/>
+        <TextView
+                android:id="@+id/tvcong"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:padding="5dip"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text=" Congratulations you have your first robot!!!!!"/>
+
+
+
     </LinearLayout>
 
 </ScrollView>

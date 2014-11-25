@@ -8,7 +8,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 import com.example.Ebotics.Models.user;
 import com.example.Ebotics.Utils.Constants;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,16 +20,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String TAG = DatabaseHandler.class.getSimpleName();
 
     private static final int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "userDataBase";
+    private static final String DATABASE_NAME = "android_api";
     private static final String TABLE_USER_DETAILS = "userDetails";
 
     //Database Field Values
     private static final String TABLE_COLUMN_ID = "id";
-    private static final String TABLE_COLUMN_FULL_NAME = "fullNames";
     private static final String TABLE_COLUMN_USER_NAME = "userNames";
     private static final String TABLE_COLUMN_USER_PASSWORD = "password";
-    private static final String TABLE_COLUMN_EMAIL = "email";
-    private static final String TABLE_COLUMN_PHONE_NUMBER = "phoneNumber";
 
 
     //Constructor
@@ -48,11 +44,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String createCommand = "CREATE TABLE " + TABLE_USER_DETAILS + "("
                 + TABLE_COLUMN_ID + "INTEGER AUTO INCREMENT PRIMARY KEY, "
-                + TABLE_COLUMN_FULL_NAME + "TEXT, "
-                + TABLE_COLUMN_USER_NAME + "TEXT, "
-                + TABLE_COLUMN_EMAIL + "TEXT, "
-                + TABLE_COLUMN_USER_PASSWORD + "TEXT, "
-                + TABLE_COLUMN_PHONE_NUMBER + "TEXT"
+                + TABLE_COLUMN_USER_NAME + "TEXT, " + TABLE_COLUMN_USER_PASSWORD + "TEXT, "
                 + ");";
 
         sqLiteDatabase.execSQL(createCommand);
@@ -83,7 +75,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ContentValues contentValues = new ContentValues();
         contentValues.put(Constants.KEY_USER_NAME, user.getUserName());
         contentValues.put(Constants.KEY_PASSWORD, user.getPassword());
-        contentValues.put(Constants.KEY_EMAIL, user.getEmail());
 
         sqLiteDatabase.insert(TABLE_USER_DETAILS, null, contentValues);
 
@@ -102,16 +93,12 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         //Loop through the Result
         if (cursor.moveToFirst()) {
             do {
-                String fullNames = cursor.getString(1);
-                String userName = cursor.getString(2);
-                String email = cursor.getString(3);
-                String password = cursor.getString(4);
-                String phoneNumber = cursor.getString(5);
+                String userName = cursor.getString(1);
+                String password = cursor.getString(2);
 
                 user userModel = new user();
                 userModel.setUserName(userName);
                 userModel.setPassword(password);
-                userModel.setEmail(email);
 
                 userList.add(userModel);
 
@@ -146,7 +133,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         ContentValues values = new ContentValues();
         values.put(Constants.KEY_USER_NAME, user.getUserName());
-        values.put(Constants.KEY_EMAIL, user.getEmail());
 
         // updating row
         return db.update(TABLE_USER_DETAILS, values, TABLE_COLUMN_ID + " = ?",
@@ -163,4 +149,33 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 new String[]{String.valueOf(user.getUserName())});
         db.close();
     }
+
+
+    /**
+     * Getting user login status
+     * return true if rows are there in table
+     * */
+    public int getRowCount() {
+        String countQuery = "SELECT  * FROM " + TABLE_USER_DETAILS;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(countQuery, null);
+        int rowCount = cursor.getCount();
+        db.close();
+        cursor.close();
+
+        // return row count
+        return rowCount;
+    }
+
+    /**
+     * Re crate database
+     * Delete all tables and create them again
+     * */
+    public void resetTables(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        // Delete All Rows
+        db.delete(TABLE_USER_DETAILS, null, null);
+        db.close();
+    }
+
 }

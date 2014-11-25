@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+             android:background="@color/togo">
+
+    <TextView android:layout_width="wrap_content"
+              android:id="@+id/tvvid_step1"
+              android:textColor="@color/white"
+              android:text="This videos shows you how to create a simple robot at home...ENJOY!!"
+              android:layout_height="wrap_content"/>
+
+
+    <Button
+            android:id="@+id/btn_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intro"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@color/orange"/>
+
+    <WebView android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@color/togo"
+             android:id="@+id/wbtutor"/>
+
+
+
+
+
+
+</LinearLayout>

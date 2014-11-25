@@ -29,14 +29,12 @@ public class SessionManager {
      * This method stores data in the shared preferences
      *me Users names
      * @param userName User Name
-     * @param email    User Email
      * @param password User Password
      */
-    public void createUser(String fullName, String userName, String email, String password) {
+    public void createUser( String userName, String password) {
 
         //Store Data in the shared preferences
         editor.putString(Constants.KEY_USER_NAME, userName);
-        editor.putString(Constants.KEY_EMAIL, email);
         editor.putString(Constants.KEY_PASSWORD, password);
         editor.putBoolean(Constants.KEY_STATE, false);
 

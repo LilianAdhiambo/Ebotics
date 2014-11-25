@@ -23,9 +23,9 @@
         in the right direction. Some people are not capable of working on their own and some make better employees than
         employers. Becoming an entrepreneur requires significant forethought and evaluation before quitting your day job
         and investing time and money that you could easily lose. Below are seven basic steps that can move someone
-        toward becoming an entrepreneur with a successful business.
+        toward becoming an entrepreneur with a successful business.</string>
 
-        Be willing to take risks.
+      <string name="entrec">Be willing to take risks.
         Any startup business involves risks, the ultimate one, of course, being the possibility of failure. If you are
         uneasy about stepping out of your comfort zone, becoming an entrepreneur is probably not a good idea. For one
         thing, you could spend all your extra time (assuming you still hold a full-time job doing something else) trying
@@ -51,10 +51,26 @@
     
     <!--Robotics page-->
 
+
+
+   <!--home menu page-->
     <string name="action_settings">Settings</string>
-    <string name="one_string">One</string>
-    <string name="two_string">Two</string>
-    <string name="three_string">Three</string>
-    <string name="four_string">Four</string>
+    <string name="menu_settings">settings</string>
+
+    <string name="menu_camera_label">label</string>
+    <string name="action_search">search</string>
+    <string name="action_location_found">location</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_check_updates">Check updates</string>
+    <string name="action_help">help</string>
+    <string name="action_video">videos</string>
+
+    <!--videos-->
+    <string name="intro">Watch videos tutorials!!</string>
+    <string name="picture">Picture</string>
+    <string name="capture">Launch Camera</string>
+
+
+
 
 </resources>

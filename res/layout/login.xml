@@ -3,17 +3,19 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-        android:background="@color/celdon">
+              android:gravity="center"
+              android:background="@drawable/phones">
 
     <EditText
             android:id="@+id/etUserNameToLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="User Name"
+            android:layout_marginTop="180dp"
             android:ems="10"
-            android:textColorHint="@color/white"
-            android:textColor="@color/white"
-            android:layout_gravity="center_horizontal">
+            android:textColorHint="@color/dark_gray"
+            android:drawableLeft="@drawable/profile"
+            android:textColor="@color/black">
         <requestFocus />
     </EditText>
 
@@ -22,17 +24,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:layout_gravity="center_horizontal"
             android:inputType="textPassword"
-            android:textColorHint="@color/white"
-            android:textColor="@color/white"
+            android:textColorHint="@color/dark_gray"
+            android:drawableLeft="@drawable/lock"
+            android:textColor="@color/black"
             android:hint="Password" />
 
     <Button
             android:id="@+id/buttonSignIn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Sign In"
-            android:background="@drawable/button_style"/>
+            android:text="Login"
+            android:textColor="@color/white"
+            android:background="@color/orange"
+            android:layout_marginTop="10dp" />
+    <Button
+        android:id="@+id/btnLinkRegister"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Have no account,Register!!"
+        android:textSize="16sp"
+        android:background="@null"
+        android:textColor="@color/togo"/>
+
 
 </LinearLayout>

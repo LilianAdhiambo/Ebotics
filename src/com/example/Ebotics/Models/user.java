@@ -6,7 +6,6 @@ package com.example.Ebotics.Models;
 public class user {
 
     String userName;
-    String email;
     String password;
 
     public String getUserName() {
@@ -23,13 +22,5 @@ public class user {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 }
